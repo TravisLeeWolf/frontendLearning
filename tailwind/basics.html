@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind Basics</title>
+  </head>
+  <body>
+    <div>
+      <p class="truncate px-4 border m-2">
+        This is a long sentence to show that using truncate will help truncate
+        the following sentence so that it makes it easier to notice that it's a
+        long sentence and can't fit in one line.
+      </p>
+      <div class="flex flex-wrap">
+        <div class="w-32 grow border">01</div>
+        <div class="w-32 grow border">02</div>
+        <div class="w-32 grow border">03</div>
+        <div class="w-32 grow border">04</div>
+        <div class="w-32 grow border">05</div>
+        <div class="w-32 grow border">06</div>
+      </div>
+      <div class="flex justify-between">
+        <div class="bg-red-500 min-w-64">Red</div>
+        <div class="bg-blue-500 min-w-64">Blue</div>
+      </div>
+      <div class="flex justify-evenly">
+        <div class="bg-orange-500 min-w-64">Orange</div>
+        <div class="bg-purple-500 min-w-64">Purple</div>
+      </div>
+      <p>align-center for vertical</p>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="p-6 rounded-lg bg-pink-500 col-span-2 col-start-2">
+          Takes two cols and starts on 2
+        </div>
+        <div class="p-6 rounded-lg bg-sky-500">2</div>
+        <div class="p-6 rounded-lg bg-sky-500">3</div>
+        <div class="p-6 rounded-lg bg-pink-500 col-span-2">Takes two cols</div>
+        <div class="p-6 rounded-lg bg-sky-500">5</div>
+        <div class="p-6 rounded-lg bg-sky-500">6</div>
+      </div>
+      <div class="container mx-auto rounded py-6">
+        <div class="bg-green-600 px-2">Using a container</div>
+        <div class="columns-3 text-sm">
+          <p>
+            1. This is some text that will reactively be added to one of three
+            columns.
+          </p>
+          <p>
+            2. This is some text that will reactively be added to one of three
+            columns.
+          </p>
+          <p>
+            3. This is some text that will reactively be added to one of three
+            columns.
+          </p>
+          <p>
+            4. This is some text that will reactively be added to one of three
+            columns.
+          </p>
+          <p>
+            5. This is some text that will reactively be added to one of three
+            columns.
+          </p>
+          <p>
+            6. This is some text that will reactively be added to one of three
+            columns.
+          </p>
+          <p>
+            7. This is some text that will reactively be added to one of three
+            columns.
+          </p>
+        </div>
+        <p class="border-2 m-2">Overflow allows scrolling if needed</p>
+        <p class="ring-4 m-2">Invisible keeps the layout but hids the</p>
+        <p class="shadow">Shadow</p>
+        <div class="p-2">
+          <button
+            class="bg-indigo-500 p-1 rounded shadow border border-indigo-800 transition delay-100 duration-100 hover:-translate-y-1 hover:text-white"
+          >
+            Click me!
+          </button>
+          <p>Animate is fun, try it later...</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
